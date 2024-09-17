@@ -1,6 +1,6 @@
 // reference area
 const resumeform = document.getElementById("resume") as HTMLFormElement;
- resumeDisplayElement = document.getElementById("resume-display") as HTMLDivElement;
+ const resumeDisplayElement = document.getElementById("resume-display") as HTMLDivElement;
  
 // form submission
 
@@ -17,25 +17,25 @@ const resumeform = document.getElementById("resume") as HTMLFormElement;
 
     // generate resume 
     const resumehtml =` 
-    <h2> <b>Resume</b></></h2>
+    <h2> <b> Editable Resume</b></></h2>
     <h3>Personal Information</h3>
-    <p><b>Name:</b>${name}</p>
+    <p><b>Name:</b> <span cotenteditable = "true">${name}</span></p>
      
-    <p><b>Email:</b>${email}</p>
+    <p><b>Email:</b><span cotenteditable = "true">${email}</span></p>
      
-    <p><b>phone:</b>${phone}</p>
+    <p><b>phone:</b><span cotenteditable = "true">${phone}</span></p>
 
     <h3>Education</h3>
 
-    <p>${education}</P>
+    <p cotenteditable = "true" >${education}</P>
 
      <h3>Experience</h3>
 
-    </b>${experience}</p>
+    <p cotenteditable = "true">${experience}</p>
 
       <h3>skills</h3>
 
-      <p>${skills}</p>
+      <p cotenteditable = "true">${skills}</p>
     
     `;
 
